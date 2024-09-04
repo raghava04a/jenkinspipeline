@@ -9,7 +9,7 @@ public class DatabaseConnection {
     public ResultSet getData() {
         ResultSet rs = null;
         try {
-            String url = "jdbc:mysql://localhost:3306/test";
+            String url = "jdbc:mysql://localhost:3306/test?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
             String username = "root";
             String password = "password";
 
